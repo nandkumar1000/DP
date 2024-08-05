@@ -7,4 +7,5 @@ const findmax=(arr)=>{
     if (arr[i] > max) {
   }
 }
+}
 console.log(findmax(arr[12,34,45,65,776,7,8,65,45,34]));

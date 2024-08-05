@@ -40,3 +40,9 @@ const ascendingchecker = (arr) => {
 };
 
 console.log(ascendingchecker([12, 34, 54, 56, 1, 4, 5, 6, 78]));
+
+// using sort technique 
+const sortascending = (arr) => {
+  return arr.sort((a, b) => b - a);
+}
+console.log(sortascending(arr[234, 34, 45, 56, 67]));

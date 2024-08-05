@@ -1,6 +1,6 @@
 
 // Arranging the element in descending order;
-const checker = (arr) => {
+const descendingchecker = (arr) => {
   let temp;
   if (arr.length === 0) {
     return false;
@@ -18,5 +18,25 @@ const checker = (arr) => {
   }
 };
 
-console.log(checker([12, 34, 54, 56, 1, 4, 5, 6, 78]));
+console.log(descendingchecker([12, 34, 54, 56, 1, 4, 5, 6, 78]));
 
+// Arranging the element in ascending order;
+const ascendingchecker = (arr) => {
+  let temp;
+  if (arr.length === 0) {
+    return false;
+  } else {
+    for (let i = 0; i < arr.length - 1; i++) {
+      for (let j = i + 1; j < arr.length; j++) {
+        if (arr[i] > arr[j]) {
+          temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
+        }
+      }
+    }
+    return arr;
+  }
+};
+
+console.log(ascendingchecker([12, 34, 54, 56, 1, 4, 5, 6, 78]));

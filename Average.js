@@ -13,3 +13,11 @@ const average = (arr) => {
 }
 
 console.log(average([23, 45, 56, 67, 78]));
+
+// another way;
+
+const calculateAverage=(arr)=>{
+  return arr.reduce((a,b)=>a+b,0)/arr.length;
+
+}
+console.log(calculateAverage([12,34,45,65,67]));

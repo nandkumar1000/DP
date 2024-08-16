@@ -21,3 +21,17 @@ console.log(duplicate([1,2,3,1,2,4,6]));
 console.log(duplicate([]));
 
 // remove All the duplicate element of array and find unique element of the array 
+
+const removeDuplicate = (arr) => {
+  if (arr.length === 0) {
+    return null;
+  }
+  arr = arr.sort();
+  const uniqueArr = [...new Set(arr)];
+  return uniqueArr;
+};
+
+console.log(removeDuplicate([1, 2, 3, 1, 2, 4, 6])); 
+console.log(removeDuplicate([])); 
+
+

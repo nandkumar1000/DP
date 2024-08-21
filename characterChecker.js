@@ -6,9 +6,7 @@ const CharacterChecker=(char)=>{
   if(char.length>1){
     return false;
   }
-
- 
-
+return char===char.toUpperCase();
 }
 console.log(CharacterChecker("A"));
 console.log(CharacterChecker("c"));

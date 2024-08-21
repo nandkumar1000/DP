@@ -10,7 +10,8 @@ const CharacterChecker=(char)=>{
     return true;
   }
   return false;
-// return char===char.toUpperCase();
+  // another approch
+return char===char.toUpperCase();
 }
 console.log(CharacterChecker("A"));
 console.log(CharacterChecker("c"));

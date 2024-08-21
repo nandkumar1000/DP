@@ -6,7 +6,11 @@ const CharacterChecker=(char)=>{
   if(char.length>1){
     return false;
   }
-return char===char.toUpperCase();
+  if(char.charCodeAt(0)>=65&&char.charCodeAt(0)<=90){
+    return true;
+  }
+  return false;
+// return char===char.toUpperCase();
 }
 console.log(CharacterChecker("A"));
 console.log(CharacterChecker("c"));
